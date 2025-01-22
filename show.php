@@ -48,7 +48,7 @@ include("conn.php");
   if (isset($_GET['action_even']) == 'delete') {
     //echo "Test";
 
-    $employee_id = $_GET['zombiegame_id'];
+    $zombiegame_id = $_GET['zombiegame_id'];
     $sql = "SELECT * FROM zombiegame WHERE zombiegame_id=$zombiegame_id";
     // echo $sql;
     $result = $conn->query($sql);
